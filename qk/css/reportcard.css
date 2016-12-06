@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+/*成绩单*/
+.reportcard{padding-bottom:62px}
+.reportcardFix{padding:0 10px 10px;background-color:#fff;position:fixed;left:0;right:0;bottom:0}
+
+.reportcard .profit{border:5px solid #4d90de;background-color:#fff;padding-bottom:50px}
+.reportcard .profitTop{background:#5da0ee url(../images/profit.png) repeat-x 0 bottom;-webkit-background-size:8px 6px;background-size:8px 6px;padding:20px 20px 26px 20px;display:-webkit-box;color:#fff;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;}
+.reportcard .profitTop div.profitnum{-webkit-box-flex:1}
+.reportcard .profitTop div.profitnum h2{margin-top:10px}
+
+
+
+.reportcard .profitTop .moneyicon{width:14px;height:14px;display:inline-block;-webkit-border-radius:50%;border-radius:50%;background-color:#fff;color:#ff6857;text-align:center;font-style:normal;font-size:12px;line-height:14px;margin-right:5px}
+.reportcard .profitTop h2{font-size:30px;font-weight:normal}
+.reportcard .profitTop .company{font-size:14px}
+
+.reportcard .profitTop div.userinfo{display:inline-block}
+.reportcard .profitTop div.userinfo .userboeder{border:1px solid #fff;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;-webkit-border-radius:5px;border-radius:5px;padding:10px 10px}
+.reportcard .profitTop div.userinfo .userph{width:32px;height:32px;-webkit-border-radius:50%;border-radius:50%;display:inline-block;border:1px solid #fff;overflow:hidden;margin-right:10px}
+.reportcard .profitTop div.userinfo ul.userlist li{padding:2px 0}
+
+.lucrelist{background-color:#fbfcff;display:-webkit-box;margin:20px;padding:10px}
+.lucrelist dl{-webkit-box-flex:1;width:33.33%;border-right:2px solid #f0f0f0;text-align:center;}
+.lucrelist dl:last-of-type{border-right:0 none}
+.lucrelist dl dt{margin-top:10px;color:#ff6857}
+
+
+.qrCode{}
+.qrCode dl{text-align:center}
+.qrCode dl dt{padding:10px;color:#666666}
+.qrCode dl dt:last-of-type{text-align:left;line-height:1.4;padding:10px 30px;font-size:12px}
+.qrCode dl dd{display:inline-block;width:120px;position:relative;padding:5px}
+/*.qrCode dl dd::after{content:"";position:absolute;background:#5da0ee url(../images/people.png) repeat-x 0 bottom;-webkit-background-size:50px 98px;background-size:50px 98px;width:50px;height:98px;left:100%;bottom:0}
+*/
+
+.logoLine{height:1px;background-color:#d6d6d6;position:relative;margin:0 20px;font-size:0;line-height:0;text-align:center;margin-top:30px}
+.logoLine .logoinfo{position:absolute;left:50%;top:-11px;padding:0 10px;background-color:#fff;margin-left:-24px}
+.logoLine .logoinfo dl{}
+.logoLine .logoinfo dl dd{display:inline-block;background-color:#69acfa;width:24px;height:24px;-webkit-border-radius:5px;border-radius:5px;line-height:24px}
+.logoLine .logoinfo dl dt{color:#69acfa;font-size:14px;line-height:14px;margin-top:5px}
+
+
+
+
+
+
+
+
+
+
+
+
+

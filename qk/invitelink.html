@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta charset="utf-8" />
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<meta name="description" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<title>钱客</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/invite.css" rel="stylesheet">
+<script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+
+
+<header>
+	<a href="javascript:window.history.back();" class="back_level" ><span class="lineae_u"></span><span class="lineae_d"></span></a>
+	<div class="headedText">邀请链接</div>
+</header>
+
+
+<div class="invite">
+    <div class="invitelink" id="invitelink" style="word-wrap:break-word;word-break:keep-all;"></div>
+    <ul class="invitetip">
+        <li>1、点击上面的链接进行复制</li>
+        <li>2、将链接粘贴到任何您想发布的地方，用户通过手机访问该链接成为钱客用户后即可分享收益。</li>
+    </ul>
+</div>
+
+
+
+<!-- appstore弹框 -->
+<div class="none" id="mask"></div>
+<div class="invitepop hidestate">
+	<dl>
+		<dd><img src="images/success.png" height="60" width="60" alt=""></dd>
+		<dt>复制网址成功</dt>
+	</dl>
+    <div class="maskbt">
+        <div class="close_apppop">知道了</div>
+    </div>
+</div>
+
+<script src="js/md5.js"></script>
+<script src="control/global.js"></script>
+<script src="control/reportcard.js"></script>
+
+
+<script>
+function invitepop(){
+    $('.invitepop').toggleClass('showstate');
+    $('#mask').toggleClass('none');
+}
+
+
+
+
+
+
+
+
+
+var invitelink = document.getElementById('invitelink');
+
+
+
+var z = new citesData();
+z.useridData(function() {
+    // console.log(z.userid);
+        $('#invitelink').html("http://h5.qianke360.cn/test/download.html?uid=" + z.userid);
+})
+
+ 
+
+document.addEventListener("selectionchange", function(e) {
+    if (window.getSelection().anchorNode.parentNode.id == 'invitelink' && document.getElementById('invitelink').innerText != window.getSelection()) {
+        var key = document.getElementById('invitelink');
+        window.getSelection().selectAllChildren(key);
+    }
+}, false);
+
+
+
+invitelink.addEventListener('copy', function(e) {
+// var r=confirm('在“App Store”中打开链接吗？');
+// if (r==true){apppop()}
+    invitepop();
+});  
+
+
+
+
+$('.close_apppop').click(function(){
+    invitepop();
+})
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@charset "utf-8";
+/*未安装提示弹框*/
+.notinstall{background-color: #ffffff;-webkit-transition:all linear 0.3s;z-index:1001;position:fixed;top:50%;left:30px;right:30px;margin-top:-100px;-webkit-border-radius:5px;border-radius:5px;text-align:center;}
+.notinstall.hidestate{opacity:0;-webkit-transform:translate(0px, 0px) scale(0.2);pointer-events:none}
+.notinstall.showstate{opacity:1;-webkit-transform:translate(0px, 0px) scale(1);pointer-events:auto}
+.installinfo{padding:20px 10px;color:#777;line-height:1.4;position:relative;padding-top:50px}
+.installinfo dd{position:absolute;width:100%;text-align:center;top:-50px}
+.installinfo dt{padding-top:30px}
+.notinstall .tip{font-size:12px;text-align:center;margin:20px 0 10px;color:#777;}
+.notinstall .tip a{color:#777;}
+.notinstall .closeinstall{width:30px;height:30px;display:inline-block;position:absolute;right:0;top:0;
+background:url(../images/close.png) no-repeat center center;-webkit-background-size:14px 14px;background-size:14px 14px;}
+.notinstall .btCon{-webkit-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px}
+
+

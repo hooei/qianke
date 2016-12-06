@@ -1,0 +1,16 @@
+﻿@charset "utf-8";
+body{background-color:#fff}
+.faq{line-height:1.4;padding:10px}
+.faq ul li{margin-top:20px}
+/*标题*/
+.faq h2.faqtit{font-size:14px;font-weight:normal;color:#ed6c31;margin-bottom:5px}
+.faq h2.faqtit span{display:inline-block;margin-right:5px}
+/*消息内容*/
+.faqa span{display:inline-block;margin-right:5px}
+
+
+
+
+
+
+

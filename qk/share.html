@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta charset="utf-8" />
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<meta name="description" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<title>钱客</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/share.css" rel="stylesheet">
+<script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+
+
+<header>
+	<a href="#" class="back_level"><span class="lineae_u"></span><span class="lineae_d"></span></a>
+	<div class="headedText">转发任务</div>
+</header>
+
+
+<div class="sharelist" id="sharelist">
+	<div class="shareinfo">
+		<h2>分享任务大礼包</h2>
+		<div><img src="images/share.jpg" width="100%" alt=""></div>
+		<div class="sharestate">
+			<div class="bottomleft">热门分享，等你来抢</div>
+			<a href="#" class="sharebt getinto">进入</a>
+		</div>
+	</div>
+	<div class="shareinfo">
+		<h2>分享任务大礼包</h2>
+		<div><img src="images/share.jpg" width="100%" alt=""></div>
+		<div class="sharestate">
+			<div class="bottomleft">热门分享，等你来抢</div>
+			<a href="#" class="sharebt already">已分享</a>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="mask" class="none"></div>
+
+<div class="sharepop hidestate">
+	<h2>分享到</h2>
+	<h3>分享完成后，点击返回钱客，才能够领取哦</h3>
+	<div class="shareroute">
+		<dl>
+			<dd><img src="images/weixin.png" height="30" width="30" alt=""></dd>
+			<dt>微信好友</dt>
+		</dl>
+		<dl>
+			<dd><img src="images/pyq.png" height="30" width="30" alt=""></dd>
+			<dt>朋友圈</dt>
+		</dl>
+		<dl>
+			<dd><img src="images/qq.png" height="30" width="30" alt=""></dd>
+			<dt>qq好友</dt>
+		</dl>
+		<dl>
+			<dd><img src="images/qqkj.png" height="30" width="30" alt=""></dd>
+			<dt>qq空间</dt>
+		</dl>
+		<dl>
+			<dd><img src="images/weibo.png" height="30" width="30" alt=""></dd>
+			<dt>微博好友</dt>
+		</dl>
+
+	</div>
+	<div class="cancel">取 消</div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var handler = function (e) {
+		e.stopPropagation(); //禁止手势缩放
+		e.preventDefault(); //页面滑动时禁止事件传播
+	};
+	function touchevent(){
+		$('.sharepop').toggleClass('showstate');
+		$('#mask').toggleClass('none');
+		if ($('#mask').attr('class') == "none") {
+		    document.body.removeEventListener('touchmove', handler,false);
+		}
+		else {
+		    document.body.addEventListener('touchmove', handler,false);
+		}
+	}
+
+	$('.sharebt').bind('click',function(){
+		touchevent();
+	});
+	$('#mask,.cancel').bind('click',function(){
+		touchevent();
+	});
+})
+</script>
+<script src="js/md5.js"></script>
+<script src="control/global.js"></script>
+<script src="control/share.js"></script>
+
+
+
+
+
+</body>
+</html>

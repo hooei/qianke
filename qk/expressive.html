@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta charset="utf-8" />
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<meta name="description" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<title>钱客</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/expressive.css" rel="stylesheet">
+<link href="css/detailed.css" rel="stylesheet">
+
+<script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+
+
+<header>
+	<a href="index.html" class="back_level"><span class="lineae_u"></span><span class="lineae_d"></span></a>
+	<div class="headedText">提现</div>
+</header>
+
+<div class="userinfo">
+	<span class="ph"><img src="" width="100%" alt="" id="userlargeimg"></span>
+	<div>
+		<h2><span id="username"></span></h2>ID: <span id="userid"></span>
+	</div>
+</div>
+
+
+
+<div class="postalist">
+<div class="postalTip">提现到账需要1-2个工作日，请您耐心等待</div>
+
+	
+	<ul>
+		<li>
+			<a href="wxdepositors.html">
+				<div class="postcon">
+					<i class="wxtq"></i>
+					<div class="postext">
+						<div>微信提现</div>
+						<span class="tetxtip red">
+							现金优惠
+						</span>
+						<i class="linkicon"></i>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="alipay.html">
+				<div class="postcon">
+					<i class="zfbtq"></i>
+					<div class="postext">
+						<div>支付宝提现</div>
+						<i class="linkicon"></i>						
+					</div>
+				</div>
+			</a>
+		</li>
+
+
+
+	</ul>
+</div>
+
+
+
+<div class="tab_solve">
+    <ul>
+            <li class="selected">任务</li>
+            <li>邀请</li>
+            <li>提现</li>
+    </ul>
+</div>
+<div class="tab_con"> 
+     <div class="detailedinfo">
+     	<ul class="detailslist" id="alltasklist"></ul>
+     </div>
+     <div class="detailedinfo hide">
+        <ul class="detailslist" id="invitelist"></ul>
+    </div>
+     <div class="detailedinfo hide">
+     	<ul class="detailslist" id="postallist"></ul>
+     </div>
+</div>
+
+
+
+
+<script src="js/md5.js"></script>
+<script src="control/global.js"></script>
+<script src="control/expressive.js"></script>
+
+<script type="text/javascript">
+$(function(){
+    $("div.tab_solve ul li").click(function(){
+        $(this).addClass("selected").siblings().removeClass("selected");
+        var index=$("div.tab_solve ul li").index(this);
+        $("div.tab_con>div.detailedinfo").eq(index).show().siblings().hide();
+    })
+})
+</script>
+

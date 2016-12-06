@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+body{background-color:#fff}
+.unlockbody{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
+.unlockbody .swiper-container{width:100%}
+.unlockbody .swiper-slide{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;background:#fff;text-align:center;font-size:18px;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
+.unlockbody .swiper-container-horizontal>.swiper-pagination {
+    bottom:50px;
+    left: 0;
+    width: 100%;
+}
+
+.unlockbt{text-align:center;position:fixed;bottom:10px;left:20px;right:20px;z-index:10}
+.unlockbt .btCon{margin-top:0;-webkit-border-radius:5px;border-radius:5px;width:100%;display:inline-block;}
+

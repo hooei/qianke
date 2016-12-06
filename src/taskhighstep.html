@@ -1,0 +1,50 @@
+<!--header-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>钱客</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="no" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+
+		<link rel="stylesheet" href="static/libs/reset.css?rev=@@hash" />
+		<link rel="stylesheet" href="static/libs/sweetalert.css" />
+		<link rel="stylesheet" href="static/css/base.css?rev=@@hash" />
+
+<!--headerend-->
+		<link rel="stylesheet" href="static/css/taskhighstep.css" />
+	</head>
+
+	<body>
+   		<div class="g-wrapper g-taskhighstep">
+   			<header>
+				<!--<a href="taskhighdetail.html" class="back_level"><span class="lineae_u"></span><span class="lineae_d"></span></a>-->
+				<a href="javascript:window.history.back();" class="back_level"><span class="lineae_u"></span><span class="lineae_d"></span></a>
+				<div class="headedText">详细步骤</div>
+				<span class="refreshbt" id="refreshbt">刷新</span>
+			</header>
+			<div class="indexdope">
+			    <span class="dopetip"></span>
+			    <div class="dopetext" id="dopetext" style="white-space:nowrap;overflow:hidden">
+			    		
+			    </div>
+			    <span class="close_level removebt" id="removebt">
+			      <span class="close_u"></span>
+			      <span class="close_d"></span>
+			    </span>
+			</div>
+			
+			<div class="g-content">
+				
+			</div>
+   		</div>
+     
+		<script data-main="static/js/taskhighstep.js" src="static/libs/require.js?rev=@@hash"></script>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+
+
+/*顶部个人信息*/
+.userinfo{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;background-color:#fff;padding:10px}
+
+.userinfo span.ph{-webkit-box-flex:1;width:50px;height:50px;-webkit-border-radius:50%;border-radius:50%;border:1px solid #f0f0f0;overflow:hidden;display:inline-block;}
+.userinfo div{-webkit-box-flex:1;color:#9a9a9a;padding:0 10px}
+.userinfo div h2{font-size:16px;font-weight:normal;color:#515151;margin-bottom:10px}
+
+
+
+.postalTip{margin:0 10px 10px;border:1px dashed #ff6857;color:#ff6857;text-align:center;-webkit-border-radius:5px;border-radius:5px;padding:10px 0;font-size:12px}
+.postalist{background-color:#fff}
+.postalist ul li a{display:block}
+.postalist ul li a div.postcon{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;padding:0 0 0 10px}
+.postalist ul li a div.postcon div.postext{-webkit-box-flex:1;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;border-bottom:1px solid #f0f0f0;padding:15px 10px 15px 0}
+.postalist ul li a div.postcon div.postext div{-webkit-box-flex:1;}
+.postalist ul li a i.wxtq{width:16px;height:16px;display:inline-block;background:url(../images/wxtq.png) no-repeat left center;-webkit-background-size:16px 16px;background-size:16px 16px;margin-right:10px}
+.postalist ul li a i.zfbtq{width:16px;height:16px;display:inline-block;background:url(../images/zfbtq.png) no-repeat left center;-webkit-background-size:16px 16px;background-size:16px 16px;margin-right:10px}
+.postalist ul li:last-of-type a div.postcon div.postext{-border-bottom:0 none}
+.postalist ul li a span.tetxtip{font-size:12px;color:#ff6857;display:inline-block;font-size:10px;transform:scale(0.875)}
+
+/*支付宝*/
+.alipaytip{font-size:12px;text-align:center;padding:10px 0;color:#9a9a9a;border:1px dashed #9a9a9a;margin:10px;line-height:1.4}
+.alipaytip a{color:#3a90f4;text-decoration:underline}
+.alipayTx{}
+.alipayTx ul{background-color:#fff;margin-top:10px;}
+.alipayTx ul li{}
+.alipayTx ul li div.listcon{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;margin-left:10px;border-bottom:1px solid #f0f0f0;height:40px}
+.alipayTx ul li div.listcon div{-webkit-box-flex:1;padding:0 10px}
+.alipayTx ul li div.listcon div input[type=text]{width:100%;border:0 none;height:40px;text-align:right}
+
+.alipayTx ul li div.listcon i.radioicon{width:13px;height:12px;display:inline-block;background:url(../images/radioicon.png) no-repeat left top;-webkit-background-size:33px 12px;background-size:33px 12px;vertical-align:middle;margin:0 10px;}
+.alipayTx ul li div.listcon i.radioicon.con{background-position:right top}
+
+.alipayTx ul li div.listcon span.radiospan{display:inline-block;color:#9a9a9a;font-size:12px}
+
+
+.actualposta{color:#9a9a9a;padding:10px}
+
+
+/*提交后弹框*/
+.paysuspop{background-color: #ffffff;overflow:hidden;-webkit-transition:all linear 0.3s;z-index:1001;position:fixed;top:50%;left:30px;right:30px;margin-top:-60px;-webkit-border-radius:5px;border-radius:5px;text-align:center}
+.paysuspop.hidestate{opacity:0;-webkit-transform:translate(0px, 0px) scale(0.2);pointer-events:none}
+.paysuspop.showstate{opacity:1;-webkit-transform:translate(0px, 0px) scale(1);pointer-events:auto}
+
+.paysusinfo{padding:20px 10px;color:#777;line-height:1.4}
+.paysusinfo h2{font-weight:normal;font-size:16px;padding:10px 0}
+/*.paysuspop span.close{background:url(../images/close.png) no-repeat center center;-webkit-background-size:20px 20px;background-size:20px 20px;height:20px;width:20px;display:inline-block;position:absolute;right:5px;top:5px;padding:5px;border:1px solid #cdcdcd;-webkit-border-radius:15px;border-radius:15px;z-index:3}
+*/
+.paysuspop span.close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right:5px;
+    top:5px;
+    overflow: hidden;
+    text-indent: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.paysuspop span.close::before, .paysuspop span.close::after {
+    content: '';
+    position: absolute;
+    width:2px;
+    height:16px;
+    top: 50%;
+    left: 50%;
+    background: #7f7f7f;
+}
+
+.paysuspop span.close::before {
+    -webkit-transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.paysuspop span.close::after {
+    -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%,-50%) rotate(-45deg);
+}

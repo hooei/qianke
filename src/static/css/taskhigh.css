@@ -1,0 +1,101 @@
+.g-list {
+  width: 100%;
+}
+.g-list .high-list, .g-list .future-text {
+  border-bottom: 1px solid #a1a1a1;
+}
+.g-list ul li {
+  position: relative;
+  width: 100%;
+  height: 3.7rem;
+  background-color: #fff;
+}
+.g-list ul li .icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  margin-top: -1.35rem;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.g-list ul li .content-wrap {
+  padding-left: 3.7rem;
+  width: 100%;
+  height: 100%;
+}
+.g-list ul li .content-wrap .content {
+  padding-top: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #f1f1f1;
+}
+.g-list ul li .content-wrap .content .title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.g-list ul li .content-wrap .content .tags-box {
+  padding-top: .5rem;
+  margin-left: -.25rem;
+}
+.g-list ul li .content-wrap .content .tags-box .tags {
+  float: left;
+  padding: 0 .3rem;
+  margin-left: .25rem;
+  height: 1rem;
+  line-height: .9rem;
+  border: 1px solid #f1f1f1;
+  background-color: #f8f9fb;
+  color: #929292;
+  border-radius: .4rem;
+}
+.g-list ul li .prize {
+  position: absolute;
+  right: .5rem;
+  top: 50%;
+  margin-top: -.4rem;
+  font-size: 1rem;
+  color: #ff1b02;
+}
+
+.g-list-1 {
+  margin-top: .5rem;
+}
+
+.g-future-list .future-text {
+  padding: 1rem .5rem;
+  width: 100%;
+}
+.g-future-list .future-text .future-totle-money {
+  width: 100%;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  padding: 0 .5rem;
+  border: 1px dashed #aaa;
+  color: #999;
+}
+
+.g-list-cheking {
+  margin-top: .5rem;
+}
+.g-list-cheking ul li {
+  background-color: #fafafa;
+}
+.g-list-cheking ul li .icon {
+  opacity: .3;
+}
+.g-list-cheking ul li .title, .g-list-cheking ul li .tags {
+  color: #adadad !important;
+}
+.g-list-cheking ul li .prize {
+  font-size: .7rem;
+  margin-top: -.35rem;
+  color: #adadad;
+}
+
+.sweet-alert > p {
+  font-size: 13px;
+}
+
+
+
+/*# sourceMappingURL=taskhigh.css.map */

@@ -1,0 +1,51 @@
+﻿@charset "utf-8";
+
+/*剩余次数*/
+.surplusnum{padding:10px;background-color:#fff}
+
+
+/*模版列表*/
+.template{background-color:#fff}
+.template ul li{}
+.template ul li a{display:block}
+.template ul li  div.templcon{display:-webkit-box;padding:5px 0 0px 10px}
+.template ul li  div.templcon div.templconInfo{-webkit-box-flex:1;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;border-bottom:1px solid #f0f0f0;margin-left:10px;padding:10px 10px 10px 0;color:#ff2d15}
+.template ul li  div.templcon div.templconInfo div{-webkit-box-flex:1;color:#999;font-size:12px}
+.template ul li  div.templcon div h2{font-size:18px;font-weight: normal;margin-bottom:10px;color:#333;font-weight:bold}
+.template ul li  span.reward{font-size:20px;display:block}
+.template ul li  div.templcon span.tipbor{border:1px solid #efeff0;display:inline-block;font-size:12px;padding:3px 10px;-webkit-border-radius:10px;border-radius:10px;margin-right:5px;background-color:#f8f9fb;color:#808080}
+.template ul li:last-of-type a div.templcon div.templconInfo{border-bottom:0 none}
+.template ul li  div.templcon div.templconInfo div.signhandle{display:inline-block;color:#ff2d15}
+
+
+
+
+
+
+
+/*.template ul li a span.temBt{width:64px;height:22px;line-height:22px;font-size:12px;-webkit-border-radius:5px;border-radius:5px;display:inline-block;;color:#fff;text-align:center}
+*/
+
+/*
+奖励数
+.template ul li a span.temBt.reward{background-color:#ff6857}
+进行中
+.template ul li a span.temBt.carried{background-color:#fab345}
+审核成功
+.template ul li a span.temBt.audits{background-color:#00c8b6}
+*/
+/*剩余任务*/
+/*
+.surplustask{background-color:#fff;border-bottom:1px solid #e0e0e0;padding:10px;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;}
+.surplustask span.surplusnum{width:21px;height:17px;display:inline-block; background-image:url(../images/surplusnum.png);background-repeat:no-repeat;-webkit-background-size:25px 27px;background-size:25px 27px;color:#fff;padding-top:10px;padding-left:4px; overflow:hidden;font-size:12px}
+.surplustask div{-webkit-box-flex:1;padding:0 10px}
+.surplustask span.moreDraw{border:1px solid #3cb2eb;color:#3cb2eb;display:inline-block;padding:5px 10px;-webkit-border-radius:5px;border-radius:5px;font-size:12px}
+*/
+
+.invitemar{margin-top:10px;border-top:1px solid #f0f0f0;}
+
+
+
+
+
+

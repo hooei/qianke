@@ -1,0 +1,63 @@
+<!--header--><!--headerend-->
+		<link rel="stylesheet" href="static/css/taskhighdetail.css" />
+	</head>
+
+	<body>
+   		<div class="g-wrapper g-taskhighdetail">
+   			<header>
+				<a class="back_level btn-back"><span class="lineae_u"></span><span class="lineae_d"></span></a>
+				<div class="headedText">高额任务详情</div>
+				<span class="refreshbt" id="refreshbt">刷新</span>
+			</header>
+			<div class="indexdope">
+			    <span class="dopetip"></span>
+			    <div class="dopetext" id="dopetext" style="white-space:nowrap;overflow:hidden">
+			    		
+			    </div>
+			    <span class="close_level removebt" id="removebt">
+			      <span class="close_u"></span>
+			      <span class="close_d"></span>
+			    </span>
+			</div>
+			
+			<div class="g-content">
+				<div class="g-header">
+					<div class="g-header-inner">
+						
+					</div>
+				</div>
+				<div class="m-step">
+					<div class="m-step-inner"></div>
+				</div>
+				<div class="m-btn-wrap">
+					<div class="btn-detail">详细<br />步骤</div>
+					<div class="btn-start">开始任务</div>
+				</div>
+				
+				<div class="m-finish-wrap">
+					<div class="m-ipt-box">
+						<div class="m-ipt-list">
+							<span class="text">姓名</span>
+							<input id="ipt-name" type="text" placeholder="请输入所填写的姓名" />
+						</div>
+						<div class="m-ipt-list">
+							<span class="text">手机号</span>
+							<input id="ipt-tel" type="tel" placeholder="请输入所绑定的手机号" />
+						</div>
+						<div class="m-ipt-list">
+							<span class="text">验证码</span>
+							<input id="ipt-yzm" type="text" placeholder="请填写" />
+							<span id="get-yzm" class="m-yzm-btn">获取验证码</span>
+						</div>
+					</div>
+					<div class="btn-finish forbid">提交审核</div>
+					<div class="m-finish-text">
+						
+					</div>
+				</div>
+			</div>
+   		</div>
+     
+		<script data-main="static/js/taskhighdetail.js" src="static/libs/require.js?rev=@@hash"></script>
+	</body>
+</html>

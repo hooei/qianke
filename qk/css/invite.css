@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+.invite{margin-top:10px;background-color:#fff;padding:20px;line-height:1.4;}
+.invitelink{border: 1px dashed #9a9a9a;padding:10px 20px;-webkit-border-radius:10px;color:#9a9a9a;-webkit-user-select:all;text-align:center;}
+.invitetip{color:#9a9a9a;margin-top:10px}
+.invitetip li{padding:3px 0;font-size:12px}
+
+
+/*invite弹框*/
+.invitepop{background-color: #ffffff;overflow:hidden;-webkit-transition:all linear 0.3s;z-index:1001;position:fixed;top:50%;left:30px;right:30px;margin-top:-92px;-webkit-border-radius:5px;border-radius:5px;font-weight:bold;}
+.invitepop.hidestate{opacity:0;-webkit-transform:translate(0px, 0px) scale(0.2);pointer-events:none}
+.invitepop.showstate{opacity:1;-webkit-transform:translate(0px, 0px) scale(1);pointer-events:auto}
+.invitepop dl{text-align:center}
+.invitepop dl dd{margin-top:10px}
+.invitepop dl dt{color:#9a9a9a;padding:20px 0}
+.invitepop .maskbt{margin:10px}
+.invitepop .maskbt .close_apppop{background-color:#69acfa;color:#fff;-webkit-border-radius:3px;border-radius:3px}
+
+
+
+
+
+

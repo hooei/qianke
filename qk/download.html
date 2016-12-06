@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta charset="utf-8" />
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<meta name="description" content="手赚,手机赚钱,兼职,网络兼职,网赚,手机理财,零花钱,赚点小钱,在家赚钱,钱咖,应用试客,米赚,赚钱APP,积分墙,ASO优化,苹果冲榜,薅羊毛,羊毛党,网络水军" />
+<title>加入钱客</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/download.css" rel="stylesheet">
+<script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+
+<div class="download">
+
+	<div class="downtext">
+		<h2>一个能赚钱的试玩平台</h2>
+		<div>用户累计提现 <span class="yellow">328,537,764.14</span>元</div>
+	</div>
+
+
+
+
+<div class="downloadbtcon">
+	<span class="downbt followpopbt">关注钱客</span>
+</div>
+
+<div class="downtip">请在公众号内下载钱客APP</div>
+
+
+
+
+
+<div class="followmask none"></div>
+<div class="follow none">
+    <span class="close followclose"></span>
+    <div class="followtext">
+        <dl>
+            <dd><img src="" alt="" width="200" class="codeph"></dd>
+            <dt>长按图片保存二维码，点微信右上角扫一扫，选相册二维码图识别</dt>
+        </dl>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+    // 获取？后边字符
+    var _GLOBAL = {
+            ua: navigator.userAgent.toLowerCase(),
+            queryString: function(str) {
+                //获得?后边的字符
+                var index = str.indexOf('?'),
+                    segments = str.substring(index >= 0 ? index + 1 : index);
+
+                return segments.split('&').reduce(function(obj, pair) {
+                    var parts = pair.split('=');
+                    if (parts.length === 2) {
+                        obj[parts[0].toLowerCase()] = (null === parts[1]) ? '' : decodeURIComponent(parts[1]);
+                    }
+                    return obj;
+                }, {});
+            }
+
+        }
+    var argumentUrl = _GLOBAL.queryString(window.location.search),
+        followuid = argumentUrl['uid'];
+
+    if (followuid != null && followuid != 'null' && followuid.length > 0) {
+        $('.codeph').attr('src','http://www.qianke360.cn/wcserv/wechat/ticket.jsp?uid='+ followuid);
+
+    }else{
+        $('.codeph').attr('src','http://www.qianke360.cn/wcserv/wechat/ticket.jsp?uid=0');
+    };  
+
+
+
+
+    function followtipshow() {
+        $('.followmask').show();
+        $('.follow').show();
+    }
+
+
+    function followtiphide() {
+        $('.followmask').hide();
+        $('.follow').hide();
+    }
+
+
+    $('.followpopbt').click(function(){
+        followtipshow();
+    });
+    $('.followclose').click(function(){
+        followtiphide();
+    })
+})
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

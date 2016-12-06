@@ -1,0 +1,203 @@
+.g-taskhighdetail {
+    
+    .g-content {
+        .g-header {
+            padding-left: 1rem;
+            width: 100%;
+            background-color: #fff;
+            
+            .g-header-inner {
+                position: relative;
+                width: 100%;
+                height: 3.7rem;
+                border-bottom: 1px solid #f1f1f1;
+                
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -1.3rem;
+                    width: 2.6rem;
+                    height: 2.6rem;
+                }
+                
+                .title {
+                    padding-left: 3.2rem;
+                    line-height: 3.6rem;
+                    font-size: .8rem;
+                }
+                
+                .prize {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -.55rem;
+                    right: 1rem;
+                    color: #ff1b02;
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+        .m-step {
+            padding-left: 1rem;
+            background-color: #fff;
+        
+            .m-step-inner {
+                padding: {
+                    top: 1rem;
+                    right: 1rem;
+                    bottom: 1rem;
+                };
+                border-bottom: 1px solid #f1f1f1;
+                
+                .title {
+                    margin-bottom: .4rem;
+                    color: #979797;
+                    font-size: .8rem;
+                }
+                
+                .text {
+                    font-size: .7rem;
+                    line-height: 1rem;
+                    color: #b9b9b9;
+                }
+                
+                .time-cutdown {
+                    margin-left: .3rem;
+                    font-size: .6rem;
+                    color: #b9b9b9;
+                }
+            }
+        }
+        
+        .m-btn-wrap {
+            position: relative;
+            width: 100%;
+            height: 4.5rem;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: #fff;
+            
+            .btn-detail {
+                position: absolute;
+                padding-top: .49rem;
+                left: 1rem;
+                top: 50%;
+                margin-top: -1.5rem;
+                width: 3.5rem;
+                height: 3rem;
+                border: 1px solid #76baf2;
+                border-radius: .2rem;
+                color: #76baf2;
+                text-align: center;
+                font-size: .7rem;
+                line-height: 1rem;
+            }
+            
+            .btn-start {
+                position: absolute;
+                left: 5.4rem;
+                top: 50%;
+                margin-top: -1.5rem;
+                width: 12.3rem;
+                height: 3rem;
+                background-color: #76baf2;
+                border-radius: .2rem;
+                font-size: .85rem;
+                line-height: 3rem;
+                text-align: center;
+                color: #fff;
+            }
+        }
+        
+        .m-finish-wrap {
+            margin-top: .6rem;
+            margin-bottom: .5rem;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            
+            .btn-finish {
+                margin: 1.2rem auto;
+                width: 16.4rem;
+                height: 3rem;
+                line-height: 3rem;
+                text-align: center;
+                color: #fff;
+                font-size: .85rem;
+                border-radius: .2rem;
+                background-color: #ec4949;
+                
+                &.forbid {
+                    background-color: #e0e0e0;
+                }
+            }
+            
+            .m-ipt-box {
+                padding: 0 1.1rem;
+                width: 100%;
+                
+                .m-ipt-list {
+                    position: relative;
+                    width: 100%;
+                    height: 2.95rem;
+                    border-bottom: 1px solid #f1f1f1;
+                    
+                    .text {
+                        padding-right: 1.1rem;
+                        line-height: 2.9rem;
+                        font-size: .8rem;
+                        color: #707070;
+                    }
+                    
+                    input {
+                        width: 10rem;
+                        font-size: .7rem;
+                        color: #707070;
+                        border: 0;
+                    }
+                    
+                    .m-yzm-btn {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        margin-top: -.9rem;
+                        width: 4.8rem;
+                        height: 1.8rem;
+                        line-height: 1.8rem;
+                        text-align: center;
+                        border-radius: .2rem;
+                        background-color: #76baf2;
+                        color: #fff;
+                        font-size: .7rem;
+                    }
+                }
+            }
+            
+            .m-finish-text {
+                padding: 1rem;
+                border-top: 1px solid #f1f1f1;
+                border-bottom: 1px solid #f1f1f1;
+                
+                .title {
+                    margin-bottom: .4rem;
+                    color: #979797;
+                    font-size: .8rem;
+                }
+                
+                .text {
+                    font-size: .7rem;
+                    line-height: 1rem;
+                    color: #b9b9b9;
+                }
+                
+                .time-cutdown {
+                    margin-left: .3rem;
+                    font-size: .6rem;
+                    color: #b9b9b9;
+                }
+            }
+        }
+        
+    }
+}

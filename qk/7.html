@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/base.js"></script>
+
+<script>
+
+// {
+// "head":{"version":"20010000","channelid":"AppStore"},
+// "body":{"t":3001,"c":[{"userid":"10513057","date":"2016-05-30"}]}
+// }
+// 用户id
+
+
+
+
+
+
+var userid = '11514157';
+var devid = '11514157';
+var imeinum = 'D4FA47FA-8158-4BEC-9E88-DE4881D26A2C';
+var imgUrl = 'http://qiangke.oss-cn-beijing.aliyuncs.com/adimg/';
+var globalUrl = 'http://www.qianke360.cn:8080/wcserv/appserv?s=';
+
+var headdata = {
+'head':{'version':'20010000','channelid':'AppStore'}
+}
+// 合并对象
+function mergeObject(a,b){
+    return $.extend({}, a,b);
+};
+
+// md5
+function encryptMd(dataMd){
+    return  $.md5(JSON.stringify(dataMd) + 'wwwqianke360cn');
+}
+// loading
+function loadshow(){
+    var div = '<div class="loading_initial">' + '<span class="load_con">' + '<span class="load_radius">' + '</span></span>' + '<div class="load_text">正在加载</div>' + '</div>';
+    $("body").append(div);
+};
+
+function loadhide(){
+    $('.loading_initial').remove();
+}
+// 当前日期
+Date.prototype.pattern=function(fmt) {           
+    var o = {           
+    "M+" : this.getMonth()+1, //月份           
+    "d+" : this.getDate(), //日           
+    "h+" : this.getHours()%12 == 0 ? 12 : this.getHours()%12, //小时           
+    "H+" : this.getHours(), //小时           
+    "m+" : this.getMinutes(), //分           
+    "s+" : this.getSeconds(), //秒           
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度           
+    "S" : this.getMilliseconds() //毫秒           
+    };           
+    var week = {           
+    "0" : "/u65e5",           
+    "1" : "/u4e00",           
+    "2" : "/u4e8c",           
+    "3" : "/u4e09",           
+    "4" : "/u56db",           
+    "5" : "/u4e94",           
+    "6" : "/u516d"          
+    };           
+    if(/(y+)/.test(fmt)){           
+        fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));           
+    }           
+    if(/(E+)/.test(fmt)){           
+        fmt=fmt.replace(RegExp.$1, ((RegExp.$1.length>1) ? (RegExp.$1.length>2 ? "/u661f/u671f" : "/u5468") : "")+week[this.getDay()+""]);           
+    }           
+    for(var k in o){           
+        if(new RegExp("("+ k +")").test(fmt)){           
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));           
+        }           
+    }           
+    return fmt;           
+}         
+var currentDate = new Date().pattern("yyyy-MM-dd")
+
+
+	
+</script>
+
+<script>
+
+// http://h5.qianke360.cn/test/exhibition.html?openid=o4J5cuCPLbdSwewMPn0SV1hjoQHw&unionid=oWkzfsiANciNJqchwHzcLBoxb1HU#
+
+var data = {
+        'body': {
+            't': 1001,
+            'c': [{
+                'adid': 11066
+            }]
+        }
+    };
+
+
+// console.log(data);
+// console.log(data.body.t);
+// alert(data);
+
+var mergedata = mergeObject(headdata,data);
+// alert(mergedata);
+// console.log(mergedata);
+
+var secret = encryptMd(mergedata);
+// alert(secret);
+// alert(escape(JSON.stringify(mergedata)));
+
+
+var encode = escape(JSON.stringify(mergedata));
+
+// alert(encode);
+
+
+$.ajax({
+	url: 'http://www.qianke360.cn:8080/wcserv/appserv?s=' + secret + '&p=' + encode,
+	type: 'post',
+	dataType : 'json',  
+	data: mergedata,
+	beforeSend: function () {
+        loadshow();
+    },
+	success:function(response,xml){
+		alert(response);
+        // console.log(response.message.length);
+		var msg = JSON.stringify(response);
+        console.log(msg);
+
+	},
+	complete: function () {
+        loadhide();
+    }, 
+    error : function() {  
+        new Toast({context:$('body'),message:'数据加载失败，请重试'}).show(); 
+    }  
+});
+	
+</script>	
+	
+</body>
+</html>

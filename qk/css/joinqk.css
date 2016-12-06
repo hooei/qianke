@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+
+.followz{}
+.followz dl{margin:30px 40px 0;text-align:center}
+.followz dl dd{margin-bottom: 10px;padding:10px;background-color:#fff}
+.followicon{background:url(../images/followicon.png) no-repeat center center;-webkit-background-size:16px 16px;background-size:16px 16px;width:16px;height:16px;display:inline-block;margin-left:10px;vertical-align:middle}
+.followzbuttom{position:fixed;width:100%;left:0;bottom:0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+﻿@charset "utf-8";
+.apprentice{padding:10px;color:#666}
+.apprentice .rule{background-color:#fff;padding:10px;border:1px solid #f0f0f0}
+.apprentice .rule h2.title{text-align:center}
+.apprentice .rule h2.title span{display:inline-block;background-color:#69acfa;font-size:14px;font-weight:normal;padding:0 20px;color:#fff;position:relative;height:20px;line-height:20px}
+
+.apprentice .rule h2.title span::after{content:"";position:absolute;width:20px;height:20px;display:inline-block;background-color:#fff;left:-15px;top:0;-webkit-transform:rotate(45deg)}
+.apprentice .rule h2.title span::before{content:"";position:absolute;width:20px;height:20px;display:inline-block;background-color:#fff;right:-15px;top:0;-webkit-transform:rotate(45deg)}
+.apprentice .rule ul{margin-top:10px}
+.apprentice .rule ul li{display:-webkit-box}
+.apprentice .rule ul li i{display:inline-block;width:8px;height:8px;-webkit-border-radius:50%;border-radius:50%;overflow:hidden;background-color:#69acfa;margin-right:10px}
+.apprentice .rule ul li div{-webkit-box-flex:1;line-height:1.4}
+
+
+.resultlist{background-color:#fff;border:1px solid #f0f0f0;display:-webkit-box;margin-top:10px;padding:10px}
+.resultlist dl{-webkit-box-flex:1;width:33.33%;border-right:2px solid #f0f0f0;text-align:center;}
+.resultlist dl:last-of-type{border-right:0 none}
+.resultlist dl dt{margin-top:10px;color:#ff6857}
+
+
+.apprentice .suggest{display:-webkit-box;margin-top:10px}
+.apprentice .suggest div{-webkit-box-flex:1;border:1px solid #f0f0f0;background-color:#fff}
+.apprentice .suggest div:first-child{margin-right:5px}
+.apprentice .suggest div:last-of-type{margin-left:5px}
+.apprentice .suggest div a{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;padding:20px 0}
+.apprentice .suggest div a i.ruleicon{background-image:url(../images/ruleicon.png)}
+.apprentice .suggest div a i.groupicon{background-image:url(../images/groupicon.png)}
+.apprentice .suggest div a i{width:14px;height:14px;display:inline-block;background-repeat:no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:middle;margin-right:5px}
+
+
+
+
+
+
+

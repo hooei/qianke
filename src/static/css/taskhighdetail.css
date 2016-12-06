@@ -1,0 +1,175 @@
+.g-taskhighdetail .g-content .g-header {
+  padding-left: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+.g-taskhighdetail .g-content .g-header .g-header-inner {
+  position: relative;
+  width: 100%;
+  height: 3.7rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+.g-taskhighdetail .g-content .g-header .g-header-inner i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.3rem;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.g-taskhighdetail .g-content .g-header .g-header-inner .title {
+  padding-left: 3.2rem;
+  line-height: 3.6rem;
+  font-size: .8rem;
+}
+.g-taskhighdetail .g-content .g-header .g-header-inner .prize {
+  position: absolute;
+  top: 50%;
+  margin-top: -.55rem;
+  right: 1rem;
+  color: #ff1b02;
+  font-size: 1rem;
+}
+.g-taskhighdetail .g-content .m-step {
+  padding-left: 1rem;
+  background-color: #fff;
+}
+.g-taskhighdetail .g-content .m-step .m-step-inner {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+.g-taskhighdetail .g-content .m-step .m-step-inner .title {
+  margin-bottom: .4rem;
+  color: #979797;
+  font-size: .8rem;
+}
+.g-taskhighdetail .g-content .m-step .m-step-inner .text {
+  font-size: .7rem;
+  line-height: 1rem;
+  color: #b9b9b9;
+}
+.g-taskhighdetail .g-content .m-step .m-step-inner .time-cutdown {
+  margin-left: .3rem;
+  font-size: .6rem;
+  color: #b9b9b9;
+}
+.g-taskhighdetail .g-content .m-btn-wrap {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+.g-taskhighdetail .g-content .m-btn-wrap .btn-detail {
+  position: absolute;
+  padding-top: .49rem;
+  left: 1rem;
+  top: 50%;
+  margin-top: -1.5rem;
+  width: 3.5rem;
+  height: 3rem;
+  border: 1px solid #76baf2;
+  border-radius: .2rem;
+  color: #76baf2;
+  text-align: center;
+  font-size: .7rem;
+  line-height: 1rem;
+}
+.g-taskhighdetail .g-content .m-btn-wrap .btn-start {
+  position: absolute;
+  left: 5.4rem;
+  top: 50%;
+  margin-top: -1.5rem;
+  width: 12.3rem;
+  height: 3rem;
+  background-color: #76baf2;
+  border-radius: .2rem;
+  font-size: .85rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #fff;
+}
+.g-taskhighdetail .g-content .m-finish-wrap {
+  margin-top: .6rem;
+  margin-bottom: .5rem;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .btn-finish {
+  margin: 1.2rem auto;
+  width: 16.4rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #fff;
+  font-size: .85rem;
+  border-radius: .2rem;
+  background-color: #ec4949;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .btn-finish.forbid {
+  background-color: #e0e0e0;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-ipt-box {
+  padding: 0 1.1rem;
+  width: 100%;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-ipt-box .m-ipt-list {
+  position: relative;
+  width: 100%;
+  height: 2.95rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-ipt-box .m-ipt-list .text {
+  padding-right: 1.1rem;
+  line-height: 2.9rem;
+  font-size: .8rem;
+  color: #707070;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-ipt-box .m-ipt-list input {
+  width: 10rem;
+  font-size: .7rem;
+  color: #707070;
+  border: 0;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-ipt-box .m-ipt-list .m-yzm-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -.9rem;
+  width: 4.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border-radius: .2rem;
+  background-color: #76baf2;
+  color: #fff;
+  font-size: .7rem;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-finish-text {
+  padding: 1rem;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-finish-text .title {
+  margin-bottom: .4rem;
+  color: #979797;
+  font-size: .8rem;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-finish-text .text {
+  font-size: .7rem;
+  line-height: 1rem;
+  color: #b9b9b9;
+}
+.g-taskhighdetail .g-content .m-finish-wrap .m-finish-text .time-cutdown {
+  margin-left: .3rem;
+  font-size: .6rem;
+  color: #b9b9b9;
+}
+
+
+
+/*# sourceMappingURL=taskhighdetail.css.map */

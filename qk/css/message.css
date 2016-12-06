@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+.message{background-color:#fff}
+/*标题*/
+.acc_trigger{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;padding:10px;border-bottom:1px solid #f0f0f0;border-top:1px solid #f0f0f0;color:#9a9a9a;}
+.acc_trigger:last-of-type{border-top:0 none}
+.acc_trigger span.ph{width:50px;height:50px;-webkit-border-radius:50%;border-radius:50%;border:1px solid #f0f0f0;overflow:hidden;display:inline-block;}
+.acc_trigger div.messagetit{-webkit-box-flex:1;padding:0 10px}
+.acc_trigger div.messagetit h2.name{font-size:16px;font-weight:normal;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;margin-bottom:10px}
+.acc_trigger div.messagetit h2.name div{-webkit-box-flex:1;color:#515151;}
+.acc_trigger div.messagetit h2.name div.read{color:#9a9a9a}
+.acc_trigger div.messagetit h2.name span.time{font-size: 12px}
+.acc_trigger i.linkicon{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.acc_trigger.active i.linkicon{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+/*消息内容*/
+.acc_container{padding:10px;line-height:1.4;display:none;}
+.acc_container:last-of-type{border-bottom:1px solid #f0f0f0}
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+.about{padding:10px;line-height:1.8}
+.about h2{font-size:16px;font-weight:normal;margin-top:10px;color:#333}
+.about h2.red{color:#ff6857}
+.cooperate li{display:-webkit-box;}
+.cooperate li span.tit{}
+.cooperate li div{-webkit-box-flex:1;margin-left:10px}
+.cooperate li div a{color:#3a90f4;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+﻿@charset "utf-8";
+.chatting{padding:10px 10px 60px 10px}
+.chatting ul li{display:-webkit-box;margin-bottom:10px}
+.chatting ul li div.dialog{-webkit-box-flex:1;}
+.chatting ul li div.dialog div{-webkit-border-radius:3px;border-radius:3px;min-height:20px;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:center;margin:0 10px}
+.chatting ul li div.dialog div div{font-size:14px;line-height:1.4;padding:10px;position:relative}
+.chatting ul li span.headicon{width:40px;height:40px;display:inline-block;-webkit-border-radius:3px;border-radius:3px;overflow:hidden;}
+.chatting ul li span.headicon img{width:40px;height: 40px}
+/*app*/
+.chatting ul li.client{}
+.chatting ul li.client div.dialog div{margin:0 50px 0 10px}
+.chatting ul li.client div.dialog div div{background-color:#fff;color:#515151;margin:0;border:1px solid #e6e6e6}
+
+.chatting ul li.client div.dialog div div::after{content:"";position:absolute;width:10px;height:10px;display:inline-block;background-color:#fff;left:-6px;top:14px;-webkit-transform:rotate(45deg);border-left:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6}
+
+/*客户*/
+.chatting ul li.shopman{}
+.chatting ul li.shopman div.dialog div{margin:0 10px 0 50px}
+.chatting ul li.shopman div.dialog div{-webkit-box-pack:end;}
+.chatting ul li.shopman div.dialog div div{background-color:#69acfa;color:#fff;margin:0;border:1px solid #398bee}
+.chatting ul li.shopman div.dialog div div::after{content:"";position:absolute;width:10px;height:10px;display:inline-block;background-color:#69acfa;right:-6px;top:14px;-webkit-transform:rotate(45deg);border-right:1px solid #398bee;border-top:1px solid #398bee}
+/*历史时间*/
+.chatting ul li.timeCon{text-align:center;display:block;margin-top:20px}
+.chatting ul li.timeCon span{display:inline-block;padding:5px 10px;background-color:rgba(0,0,0,0.05);color:#b3b3b3;font-size: 10px;transform:scale(0.875);-webkit-border-radius:3px;border-radius:3px;}
+
+
+/*发送按钮*/
+.chattingbutton{height:50px;position:fixed;left:0;bottom:0;right:0;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;background-color:#e6e6e6}
+.chattingbutton div{-webkit-box-flex:1;padding:0 5px;border:1px solid #B3B3B3;background-color:#fff;-webkit-border-radius:3px;border-radius:3px;height:33px;margin:0 0 0 10px}
+.chattingbutton div input{width:100%;height:33px;line-height:33px;border:0 none;background-color:transparent}
+
+.chattingbutton span.chattingBt{height:35px;line-height:35px;background-color:#b3b3b3;display:inline-block;padding:0 10px;-webkit-border-radius:3px;border-radius:3px;font-size:16px;margin:0 10px}
+.chattingbutton span.maySub{background-color:#22ae4f;color:#fff}
+.chattingbutton span.maySub.hover{background-color:#1ca041}
+
+
+
+
+
+
+
+
+
