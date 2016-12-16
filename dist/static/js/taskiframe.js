@@ -1,0 +1,1 @@
+require.config({baseUrl:"static/js/",paths:{jquery:"../libs/jquery",md5:"../libs/md5",sweetalert:"../libs/sweetalert.min"}}),require(["jquery","config","base"],function(e,r,t){var i=t.getUrlParam("u");e("#ifr").attr("src",i).height(e("body").height()-e(".headedText").height())});

@@ -12,7 +12,7 @@ require(["jquery", "config", "base", "md5"], function($, config, base, md5) {
 	base.FZ(20, 375);
 
 	//设置头部滚动 @滚动元素 @删除元素
-	base.scrollText("#dopetext", "#removebt");
+//	base.scrollText("#dopetext", "#removebt");
 
 	//设置刷新按钮 @刷新id
 	base.refreshPage("#refreshbt");

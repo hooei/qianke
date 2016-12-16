@@ -1,0 +1,52 @@
+<!--header-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>钱客</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="no" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no" />
+
+		<link rel="stylesheet" href="static/libs/reset.css?rev=@@hash" />
+		<link rel="stylesheet" href="static/libs/sweetalert.css" />
+		<link rel="stylesheet" href="static/css/base.css?rev=@@hash" />
+
+<!--headerend-->
+	
+	<style type="text/css">
+		#ifr {
+			width: 100%;
+			height: 100%;
+		}
+		#backQK {
+			position: fixed;
+			bottom: 50%;
+			left: 0;
+		}
+	</style>
+	</head>
+
+	<body>
+   		<!--<div class="g-wrapper g-taskhigh">-->
+   			<!--<header>
+				<a href="taskhighdetail.html" class="back_level"><span class="lineae_u"></span><span class="lineae_d"></span></a>
+				<div class="headedText">开始任务</div>
+				<span class="refreshbt" id="refreshbt">刷新</span>
+			</header>-->
+			
+			<div id="backQK">
+				<a href="taskhighdetail.html">返回qianke</a>
+			</div>
+			
+			<iframe id="ifr"></iframe>
+   		<!--</div>-->
+     
+		<script data-main="static/js/taskiframe.js" src="static/libs/require.js?rev=@@hash"></script>
+	</body>
+</html>

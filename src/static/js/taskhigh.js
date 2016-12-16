@@ -12,7 +12,15 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 	base.FZ(20, 375);
 	
 	//设置头部滚动 @滚动元素 @删除元素
-	base.scrollText("#dopetext", "#removebt");
+//	base.scrollText("#dopetext", "#removebt");
+	
+	!function(){
+		$(".j-notice-show").on("click",function(){
+			$(".u-notice-content").toggle();
+			$(".arrow").toggleClass("arrow-up");
+		});
+	}()
+
 
 	//设置刷新按钮 @刷新id
 	base.refreshPage("#refreshbt");
@@ -26,7 +34,7 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 	//加载load
 	//	base.load.show()
 	//隐藏load
-	//	base.load.hide()
+//		base.load.hide()
 
 	//请求服务器 @JSON参数 @callback
 	//	base.getdata({},function(res,err){});
@@ -51,6 +59,11 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 	}, function(res, err) {
 		console.log(res);
 		
+		if (res == 'fail') {
+			appRequestFlag += 1;
+			return;
+		}
+		
 		$.each(res.adlist, function(i, n) {
 			console.log(n.adType)
 			if(n.adType == config.adType && n.adRestTimes > 0) {
@@ -58,7 +71,7 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 			}
 		});
 		
-		futureTask(res);
+//		futureTask(res);
 
 		appRequestFlag += 1;
 	})
@@ -72,6 +85,12 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 		}]
 	}, function(res, err) {
 		console.log(res);
+		
+		if (res == 'fail') {
+			appRequestFlag += 1;
+			return;
+		}
+		
 		if(res.actlist.length > 0) {
 			$.each(res.actlist, function(i, n) {
 				if(n.type == 3 && n.memberid == base.g.id) {
@@ -134,7 +153,9 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 			}
 			
 		} else {
-			base.load.show();
+			if ($(".loading_C").length == 0) {
+				base.load.show();
+			}
 			canAppFilterCount += 1;
 			if(canAppFilterCount > 50) {
 				base.toast("数据加载失败，请重试");
@@ -164,7 +185,7 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 								'</div>' +
 							'</div>' +
 						'</div>' +
-					'<div class="prize">' + (n.adRegIncome / 100).toFixed(2) + '</div>' +
+					'<div class="prize">+' + (n.adRegIncome / 100).toFixed(2) + '元</div>' +
 				'</li>'
 			);
 		});
@@ -298,7 +319,7 @@ require(["jquery", "config", "base", "md5","sweetalert"], function($, config, ba
 				'<div class="icon" style="background:url(' + config.imgUrl + n.adLogo + ') 0 0 no-repeat;background-size:contain;"></div>' +
 				'<div class="content-wrap">' +
 					'<div class="content">' +
-						'<div class="title">' + n.adTitle + '</div>' +
+						'<div class="title">' + (function(adTitle){return adTitle.substr(0,1)+adTitle.substr(1).replace(/./ig,'*')})(n.adTitle) + '</div>' +
 						'<div class="tags-box">' +
 							'<div class="tags">今日 ' + n.adStartTime.split(" ")[1].substr(0,5) + '</div>' +
 							'<div class="tags">剩' + n.adRestTimes + '份</div>' +

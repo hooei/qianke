@@ -19,14 +19,18 @@ html,body{
     -webkit-font-smoothing: inherit;
     color: #515151;
     background-color: #f0f0f0;
+    padding-top: 2.3rem;
 }
 
 .g-wrapper {
     header {
+        width: 100%;
+        top: 0;
+        left: 0;
         height: 2.3rem;
         background-color: #fff;
-        z-index: 0;
-        position: relative;
+        z-index: 999;
+        position: fixed;
         border-bottom: 1px solid #f0f0f0;
         
         * {
@@ -81,6 +85,7 @@ html,body{
         }
     }
 }
+
 
 .indexdope {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69acfa), color-stop(100%,#398bee));
@@ -216,3 +221,44 @@ html,body{
     }
 } 
 
+
+
+
+//qianka
+//.g-wrapper header {
+//  background-color: #231e1f;
+//  height: 2.5rem;
+//  
+//  .headedText {
+//      color: #fff;
+//      font-size: .8rem;
+//      line-height: 2.5rem;
+//  }
+//  
+//  .lineae_u, .lineae_d {
+//      background-color: #fff !important;
+//  }
+//  
+//  .refreshbt {
+//      background: url(../img/refreshbt-white.png) no-repeat 0 center;
+//      background-size: 1.2rem 1.2rem;
+//  }
+//}
+//
+//.indexdope {
+//  background: #fff;
+//  
+//  .dopetip {
+//      background: url(../img/dopetip-black.png) no-repeat 0 center;
+//      background-size: .6rem .6rem;
+//  }
+//  
+//  div.dopetext {
+//      color: #666;
+//  }
+//  
+//  .close_level .close_u,
+//  .close_level .close_d {
+//      background-color: #666;
+//  }
+//}

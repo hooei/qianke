@@ -22,13 +22,17 @@ html, body {
   -webkit-font-smoothing: inherit;
   color: #515151;
   background-color: #f0f0f0;
+  padding-top: 2.3rem;
 }
 
 .g-wrapper header {
+  width: 100%;
+  top: 0;
+  left: 0;
   height: 2.3rem;
   background-color: #fff;
-  z-index: 0;
-  position: relative;
+  z-index: 999;
+  position: fixed;
   border-bottom: 1px solid #f0f0f0;
 }
 .g-wrapper header * {

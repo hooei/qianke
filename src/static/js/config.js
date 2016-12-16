@@ -13,7 +13,11 @@ define(function(){
 	]
 	
 	var adurl = function(u){
-		return "https://itunes.apple.com/cn/app/yun-zhi-jia/id"+u+"?mt=8";
+		if (/^http/.test(u)) {
+			return u;
+		}else{
+			return "https://itunes.apple.com/cn/app/yun-zhi-jia/id"+u+"?mt=8";
+		}
 	}
 	
 	return {

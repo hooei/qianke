@@ -12,7 +12,7 @@ require(["jquery", "config", "base", "md5", "sweetalert"], function($, config, b
 	base.FZ(20, 375);
 
 	//设置头部滚动 @滚动元素 @删除元素
-	base.scrollText("#dopetext", "#removebt");
+//	base.scrollText("#dopetext", "#removebt");
 
 	//设置刷新按钮 @刷新id
 	base.refreshPage("#refreshbt");
@@ -123,6 +123,7 @@ require(["jquery", "config", "base", "md5", "sweetalert"], function($, config, b
 		});
 		$(".btn-start").on("click", function() {
 			$(".btn-finish").removeClass("forbid");
+//			window.location.href = 'taskiframe.html?u='+config.adurl(o.adUrl);
 			window.open(config.adurl(o.adUrl));
 		});
 		$("#get-yzm").on("click",function(){
@@ -136,11 +137,7 @@ require(["jquery", "config", "base", "md5", "sweetalert"], function($, config, b
 					}]
 				},function(res){
 					console.log(res);
-//					if () {
-						base.swtoast("验证码发送成功")
-//					}else{
-//						base.swtoast("验证码发送失败")
-//					}
+					base.swtoast("验证码发送成功")
 				})
 			}
 		});
@@ -154,21 +151,22 @@ require(["jquery", "config", "base", "md5", "sweetalert"], function($, config, b
 		if($(that).hasClass("forbid")) {
 			return false;
 		} else {
-			if (iptJudgment()) {
-				base.getdata({
-					't':5001,
-					'c':[{
-						'devid':base.g.devid, 
-						'memberid':base.g.id, 
-						'keyword':adDetail.adId,
-						'images':'', 
-						'md5s':'', 
-						'devtoken':'', 
-						'signkey': $("#ipt-tel").val()
-					}]
-				},function(res){
-					console.log(res);
-					if (1) {
+			iptJudgment(function(status){
+				if (status == 1) {
+					base.getdata({
+						't':5001,
+						'c':[{
+							'devid':base.g.devid, 
+							'memberid':base.g.id, 
+							'keyword':adDetail.adId,
+							'images':'', 
+							'md5s':'', 
+							'devtoken':'', 
+							'signkey': $("#ipt-tel").val(),
+							'signname': $("#ipt-name").val()
+						}]
+					},function(res){
+						console.log(res);
 						swal({
 							title: "",
 							text: "提交审核成功",
@@ -182,52 +180,51 @@ require(["jquery", "config", "base", "md5", "sweetalert"], function($, config, b
 //							window.location.href = "taskhigh.html";
 							window.history.back();
 						});
-					}
-				});
-				base.remLocal("doingAdid");
-			}
+					});
+					base.remLocal("doingAdid");
+				}
+			})
 		}
 	}
 	
 	
 	//判断信息输入
-	var iptJudgment = function(){
+	var iptJudgment = function(callback){
 		var name = $("#ipt-name");
 		var tel = $("#ipt-tel");
-		var yzm = $("#ipt-yzm")
+		var yzm = $("#ipt-yzm");
 		if (!name.val()) {
 			base.swtoast("请输入所填写的姓名");
-			return false;
+			return;
 		}
 		if (!tel.val()) {
 			base.swtoast("请输入所填写的手机号");
-			return false;
+			return;
 		}
 		if (!yzm.val()) {
 			base.swtoast("请输入验证码");
-			return false;
+			return;
 		}
 		if (!/^(0|86|17951)?1\d{10}$/.test(tel.val())) {
 			base.swtoast("请输入正确的手机号");
-			return false;
+			return;
 		}
 		
-//		base.getdata({
-//			"t":6007,
-//			"c":[{
-//				"mobile":tel.val(), 
-//				"code":yzm.val()
-//			}]
-//		},function(res){
-//			console.log(res)
-//			if () {
+		base.getdata({
+			"t":6007,
+			"c":[{
+				"mobile":tel.val(), 
+				"code":yzm.val()
+			}]
+		},function(res){
+			console.log(res)
+			if (res.status == 0) {
 				//验证成功
-				return true;
-//			}else{
-//				base.swtoast("验证码错误");
-//				return false;
-//			}
-//		})
+				callback(1);
+			}else{
+				base.swtoast("验证码错误");
+			}
+		})
 	}
 
 	//任务超时

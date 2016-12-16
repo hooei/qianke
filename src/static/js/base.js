@@ -266,7 +266,6 @@ define(["jquery","config","md5","sweetalert"],function($,config,md5,swal){
 		});
 	}
 	
-	
 	function getdata(b, callback) {
 		var data = {
 	        head: {
@@ -288,10 +287,20 @@ define(["jquery","config","md5","sweetalert"],function($,config,md5,swal){
 	            load.show();
 	        },
 	        success: function(response) {
+	        		if (b.t == "6007") {
+	        			callback(response);
+	        			return;
+	        		}
+	        	
 	        		if (response.status == 0 ){
 	        			callback(response.message);
 	        		}else{
-	        			toast('数据加载失败，请重试')
+	        			if (b.t == '1003' || b.t == '3013') {
+	        				callback('fail');
+	        			}
+	        			
+//	        			toast('数据加载失败，请重试')
+					toast(response.message);
 	        		}
 	        },
 	        complete: function() {
@@ -338,10 +347,13 @@ define(["jquery","config","md5","sweetalert"],function($,config,md5,swal){
 		devid: getLocal("devid")
 	}
 	
-	g.id = "11970303";
-	g.chn = "iOS100001";
+//	g.id = "11756953";
+//	g.chn = "iOS100001";
 //	g.chn = "1010";
-	g.devid = "11394299";
+//	g.devid = "11979356";
+//	
+//	g.id = '11970303';
+//	g.devid = '11394299';
 	
 	return {
 		FZ: FZ,
